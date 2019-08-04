@@ -2,7 +2,8 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:/Users/Harry/.m2 -v /Library/Maven/apache-maven-3.6.0/conf/settings.xml:/usr/share/maven/conf/settings.xml' 
+            args '-v /Users/Harry/.m2:/root/.m2' 
+            args '-v /Library/Maven/apache-maven-3.6.0/conf/settings.xml:/usr/share/maven/conf/settings.xml'
         }
     }
     stages {
