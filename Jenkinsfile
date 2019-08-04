@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'maven:3-alpine' 
             args '-v /Users/Harry/.m2:/root/.m2' 
-            args '-v /Library/Maven/apache-maven-3.6.0:/usr/share/maven'
+            // args '-v /Library/Maven/apache-maven-3.6.0:/usr/share/maven'
         }
     }
     stages {
